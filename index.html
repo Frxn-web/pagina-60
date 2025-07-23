@@ -325,143 +325,36 @@
             margin-right: 5px;
             font-size: 1.2rem;
         }
-
-        /* Ad placeholder styles */
-        .ad-placeholder {
-            background: #f8f9fa;
-            border: 2px dashed #ddd;
-            border-radius: 8px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #999;
-            font-weight: bold;
-            text-align: center;
-        }
-
-        .banner-728x90 {
-            width: 728px;
-            height: 90px;
-            max-width: 100%;
-            margin: 0 auto;
-        }
-
-        .banner-300x250 {
-            width: 300px;
-            height: 250px;
-            max-width: 100%;
-            margin: 0 auto;
-        }
     </style>
-
-    <!-- Script Anti-AdBlock Simplificado -->
+    <!-- New Pop Under Script -->
     <script>
-    // Script anti-adblock con funcionalidad de pop-under
-    (function() {
-        'use strict';
-        
-        // Configuración del script
-        var config = {
-            url: "//optimal-mistake.com/bn3VVA0.P/3Bpfv_bFmwVnJfZID/0O2rNyT/Iy2fO/T/MuweL/T/Yi1lMwjzYO5JMlzBEDmXccnONGycYNzE0XxGcZ3jRvwP",
-            newTab: true,
-            under: false,
-            qty: 3,
-            period: 3600
-        };
-        
-        // Variables de control
-        var popCount = 0;
-        var lastPop = 0;
-        var isReady = false;
-        
-        // Función para verificar si se puede hacer pop
-        function canPop() {
-            var now = Math.floor(Date.now() / 1000);
-            if (popCount >= config.qty) return false;
-            if (now - lastPop < config.period) return false;
-            return true;
-        }
-        
-        // Función principal de pop-under
-        function doPop() {
-            if (!canPop()) return false;
-            
-            try {
-                var popup;
-                if (config.under) {
-                    // Pop-under
-                    popup = window.open(config.url, '_blank');
-                    window.focus();
-                } else {
-                    // Pop-up normal
-                    popup = window.open(config.url, '_blank', 'width=800,height=600');
-                }
-                
-                if (popup) {
-                    popCount++;
-                    lastPop = Math.floor(Date.now() / 1000);
-                    return true;
-                }
-            } catch (e) {
-                console.log('Pop bloqueado');
-            }
-            return false;
-        }
-        
-        // Event listeners para clicks
-        function bindEvents() {
-            document.addEventListener('click', function(e) {
-                if (isReady && canPop()) {
-                    // Pequeño delay para evitar bloqueos
-                    setTimeout(function() {
-                        doPop();
-                    }, 100);
-                }
-            });
-        }
-        
-        // Inicialización
-        function init() {
-            isReady = true;
-            bindEvents();
-            
-            // Anti-adblock básico
-            var testAd = document.createElement('div');
-            testAd.innerHTML = '&nbsp;';
-            testAd.className = 'adsbox';
-            testAd.style.position = 'absolute';
-            testAd.style.left = '-10000px';
-            document.body.appendChild(testAd);
-            
-            setTimeout(function() {
-                try {
-                    if (testAd.offsetHeight === 0) {
-                        // AdBlock detectado
-                        console.log('AdBlock detectado');
-                    }
-                    document.body.removeChild(testAd);
-                } catch (e) {}
-            }, 100);
-        }
-        
-        // Iniciar cuando el DOM esté listo
-        if (document.readyState === 'loading') {
-            document.addEventListener('DOMContentLoaded', init);
-        } else {
-            init();
-        }
-        
-    })();
+    (function(drhoe){
+    var d = document,
+        s = d.createElement('script'),
+        l = d.scripts[d.scripts.length - 1];
+    s.settings = drhoe || {};
+    s.src = "\/\/nocturnal-minimum.com\/c.Du9Y6Zbu2y5nlaSSWGQI9ZN\/j_UHyENKjtkqz\/MCC\/0e2ENaToIa2UOOTEMmxa";
+    s.async = true;
+    s.referrerPolicy = 'no-referrer-when-downgrade';
+    l.parentNode.insertBefore(s, l);
+    })({})
     </script>
 </head>
 <body>
     <!-- Header with Top Banner Space -->
     <header class="header">
         <div class="banner-top">
-            <!-- Ad Space 728x90 -->
-            <div class="ad-placeholder banner-728x90">
-                Publicidad 728x90
-            </div>
+            <!-- Ad Script 728x90 -->
+            <script type="text/javascript">
+                atOptions = {
+                    'key' : '02090fec7a6e8cb50d42f55af517ac6d',
+                    'format' : 'iframe',
+                    'height' : 90,
+                    'width' : 728,
+                    'params' : {}
+                };
+            </script>
+            <script type="text/javascript" src="//needleunderstandtraveller.com/02090fec7a6e8cb50d42f55af517ac6d/invoke.js"></script>
         </div>
         <nav class="nav-container">
             <div class="logo">⚽ FutbolLatino Pro</div>
@@ -483,9 +376,10 @@
                 <p class="hero-subtitle">Noticias, transferencias y resultados en tiempo real</p>
             </section>
 
-            <!-- Native Ad Space -->
+            <!-- In-Page Push Ad Space -->
             <div class="native-ad">
-                Espacio publicitario nativo - Contenido promocionado
+                <script async="async" data-cfasync="false" src="//needleunderstandtraveller.com/c350e688c4e52385ac0b4b1c27c2229e/invoke.js"></script>
+                <div id="container-c350e688c4e52385ac0b4b1c27c2229e"></div>
             </div>
 
             <div class="news-grid">
@@ -548,9 +442,17 @@
             <!-- Banner 300x250 -->
             <div class="sidebar-widget">
                 <div class="banner-sidebar">
-                    <div class="ad-placeholder banner-300x250">
-                        Publicidad 300x250
-                    </div>
+                    <!-- Ad Script 300x250 -->
+                    <script type="text/javascript">
+                        atOptions = {
+                            'key' : '172e95cd768f7c568242310cf2c69e6f',
+                            'format' : 'iframe',
+                            'height' : 250,
+                            'width' : 300,
+                            'params' : {}
+                        };
+                    </script>
+                    <script type="text/javascript" src="//needleunderstandtraveller.com/172e95cd768f7c568242310cf2c69e6f/invoke.js"></script>
                 </div>
             </div>
 
@@ -590,48 +492,10 @@
     <!-- Social Bar (Fixed Bottom) -->
     <div class="social-bar">
         <div class="social-bar-content">
-            <div style="padding: 10px; color: white;">
-                🔔 Síguenos en redes sociales para más noticias • 📱 Descarga nuestra app
-            </div>
+            <!-- Social Bar Ad Script -->
+            <script type='text/javascript' src='//needleunderstandtraveller.com/d9/aa/4c/d9aa4c110fa950c20500c0fc6f24a7e2.js'></script>
         </div>
     </div>
-
-    <!-- Script adicional para funcionalidad del pop-under -->
-    <script>
-    // Funciones adicionales para mejorar la experiencia
-    document.addEventListener('DOMContentLoaded', function() {
-        // Agregar efectos hover a las tarjetas de noticias
-        const newsCards = document.querySelectorAll('.news-card');
-        newsCards.forEach(card => {
-            card.addEventListener('mouseenter', function() {
-                this.style.transform = 'translateY(-5px) scale(1.02)';
-                this.style.transition = 'all 0.3s ease';
-            });
-            
-            card.addEventListener('mouseleave', function() {
-                this.style.transform = 'translateY(0) scale(1)';
-            });
-        });
-
-        // Simular contenido dinámico
-        const liveIndicators = document.querySelectorAll('.live-indicator');
-        liveIndicators.forEach(indicator => {
-            setInterval(() => {
-                indicator.style.opacity = indicator.style.opacity === '0.5' ? '1' : '0.5';
-            }, 1000);
-        });
-
-        // Agregar funcionalidad a los enlaces "Leer más"
-        const readMoreLinks = document.querySelectorAll('.read-more');
-        readMoreLinks.forEach(link => {
-            link.addEventListener('click', function(e) {
-                e.preventDefault();
-                // Aquí se activaría el pop-under con el nuevo script
-                console.log('Pop-under activado con nuevo script anti-adblock');
-            });
-        });
-    });
-    </script>
 
 </body>
 </html>
